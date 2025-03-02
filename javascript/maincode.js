@@ -35,7 +35,7 @@ function shopEase(event){
         You have Complete The Task ${firstDiv}  at ${formatTime} 
     `;
     div.appendChild(p);
-    historyContainer.appendChild(div);
+    historySection.appendChild(div);
 
     // btn.setAttribute("disabled", "true")
     btn.disabled = true;
@@ -121,7 +121,7 @@ function swiftPay(event){
     div.classList.add("py-2");
     p.classList.add("text-sm");
     p.classList.add("font-semibold");
-
+                                                                                                                                                                                                                                                                                                                                                                          
     p.innerText = `
         You have Complete The Task ${firstDiv}  at ${formatTime} 
     `;
