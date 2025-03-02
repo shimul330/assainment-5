@@ -4,7 +4,8 @@ function shopEase(event){
     const increaseValue = getShearedInnerText("increase-value");
     const firstDiv = document.getElementById("first-div").innerText;
     const historySection = document.getElementById("history-section");
- 
+    const historyContainer = document.getElementById("history-container");
+    
     const btn = document.getElementById("shopeasen-btn");
     
     let substractionValue = decreaseValue - 1;
@@ -21,6 +22,7 @@ function shopEase(event){
 
     const div = document.createElement("div");
     const p = document.createElement("p");
+    div.classList.add("allDiv");
     div.classList.add("mt-4");
     div.classList.add("mb-3");
     div.classList.add("bg-[#F4F7FF]");
@@ -32,14 +34,16 @@ function shopEase(event){
     p.innerText = `
         You have Complete The Task ${firstDiv}  at ${formatTime} 
     `;
-    historySection.appendChild(div);
     div.appendChild(p);
+    historyContainer.appendChild(div);
 
     // btn.setAttribute("disabled", "true")
     btn.disabled = true;
     btn.style.pointerEvents = "none";
     btn.style.opacity = "0.5";
     btn.style.cursor = "not-allowed";
+
+    
 }
    
     
@@ -65,6 +69,7 @@ function cloudSync(event){
 
     const div = document.createElement("div");
     const p = document.createElement("p");
+    div.classList.add("allDiv");
     div.classList.add("mt-4");
     div.classList.add("mb-3");
     div.classList.add("bg-[#F4F7FF]");
@@ -84,9 +89,11 @@ function cloudSync(event){
     btn.style.opacity = "0.5";
     btn.style.cursor = "not-allowed";
 
-
-
 }
+   
+
+
+
 
 function swiftPay(event){
     alert("HI i am function");
@@ -106,6 +113,7 @@ function swiftPay(event){
 
     const div = document.createElement("div");
     const p = document.createElement("p");
+    div.classList.add("allDiv");
     div.classList.add("mt-4");
     div.classList.add("mb-3");
     div.classList.add("bg-[#F4F7FF]");
@@ -146,6 +154,7 @@ function meta(event){
 
     const div = document.createElement("div");
     const p = document.createElement("p");
+    div.classList.add("allDiv");
     div.classList.add("mt-4");
     div.classList.add("mb-3");
     div.classList.add("bg-[#F4F7FF]");
@@ -187,6 +196,7 @@ function googleLlc(event){
 
     const div = document.createElement("div");
     const p = document.createElement("p");
+    div.classList.add("allDiv");
     div.classList.add("mt-4");
     div.classList.add("mb-3");
     div.classList.add("bg-[#F4F7FF]");
@@ -228,6 +238,7 @@ function glassDoor(event){
 
     const div = document.createElement("div");
     const p = document.createElement("p");
+    div.classList.add("allDiv");
     div.classList.add("mt-4");
     div.classList.add("mb-3");
     div.classList.add("bg-[#F4F7FF]");
@@ -250,3 +261,4 @@ function glassDoor(event){
 
 
 }
+

@@ -58,8 +58,8 @@
                         
                         <img class="bg-white px-2 py-2 rounded-full" src="assets/calender.png" alt="">
                         <div>
-                            <h4 class="text-base font-normal">Wed </h4>
-                            <h3 class="text-base font-bold">Jul 28 2025</h3>
+                            <h4 id="day" class="text-base font-normal">Wed </h4>
+                            <h3 id="wed" class="text-base font-bold">Jul 28 2025</h3>
                         </div>
 
                     </div>
@@ -203,14 +203,21 @@
                     <h1 class="text-lg font-semibold">Activity Log</h1>
                 </div>
                 <div class="mt-4 text-center  border-b-2 border-dashed border-slate-400 pb-4">
-                    <button class="bg-[#3752FD] px-3 text-sm py-3 rounded-lg text-white font-semibold">Clear History</button>
+                    <button onclick="clearHistory()" id="clear-history" class="bg-[#3752FD] px-3 text-sm py-3 rounded-lg text-white font-semibold">Clear History</button>
                 </div>
+                <div id="history-container">
+                    
+                </div>
+        
 
             </div>
         </section>
 
     </main>
+    <script src="./javascript/web.js"></script>
     <script src="./javascript/utiltties.js"></script>
     <script src="./javascript/maincode.js"></script>
+    <script src="./javascript/clearhistory.js"></script>
+    <script src="./javascript/bodycolour.js"></script>
 </body>
 </html>
