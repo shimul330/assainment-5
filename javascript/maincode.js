@@ -262,3 +262,11 @@ function glassDoor(event){
 
 }
 
+document.getElementById("toggle").addEventListener("click", function(){
+    window.location.href = "./toggle.html";
+})
+
+
+
+
+
